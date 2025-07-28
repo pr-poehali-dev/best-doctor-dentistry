@@ -4,18 +4,18 @@ import Icon from "@/components/ui/icon";
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-white font-open-sans">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 font-open-sans">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border z-50">
+      <nav className="fixed top-0 w-full bg-slate-900/95 backdrop-blur-sm border-b border-slate-700 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="font-montserrat font-bold text-2xl text-primary">
             Лучший Доктор
           </div>
           <div className="hidden md:flex space-x-8">
-            <a href="#home" className="text-foreground hover:text-primary transition-colors">Главная</a>
-            <a href="#services" className="text-foreground hover:text-primary transition-colors">Услуги</a>
-            <a href="#reviews" className="text-foreground hover:text-primary transition-colors">Отзывы</a>
-            <a href="#contacts" className="text-foreground hover:text-primary transition-colors">Контакты</a>
+            <a href="#home" className="text-white hover:text-primary transition-colors">Главная</a>
+            <a href="#services" className="text-white hover:text-primary transition-colors">Услуги</a>
+            <a href="#reviews" className="text-white hover:text-primary transition-colors">Отзывы</a>
+            <a href="#contacts" className="text-white hover:text-primary transition-colors">Контакты</a>
           </div>
           <Button className="font-montserrat font-medium">
             Записаться онлайн
@@ -24,15 +24,15 @@ export default function Index() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="pt-20 pb-16 bg-gradient-to-b from-background to-secondary/20">
+      <section id="home" className="pt-20 pb-16 bg-gradient-to-b from-slate-900/80 to-slate-800/80">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <h1 className="font-montserrat font-bold text-5xl md:text-6xl text-foreground mb-6 leading-tight">
+              <h1 className="font-montserrat font-bold text-5xl md:text-6xl text-white mb-6 leading-tight">
                 Профессиональная стоматология 
                 <span className="text-primary"> в Сочи</span>
               </h1>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-xl text-slate-300 mb-8 leading-relaxed">
                 Современная клиника в центре города, где забота о вашей улыбке становится приоритетом. 
                 Передовые технологии и опытные специалисты.
               </p>
@@ -59,13 +59,13 @@ export default function Index() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-background">
+      <section id="services" className="py-20 bg-slate-800/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-montserrat font-bold text-4xl text-foreground mb-4">
+            <h2 className="font-montserrat font-bold text-4xl text-white mb-4">
               Наши услуги
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
               Полный комплекс стоматологических услуг с использованием передовых технологий
             </p>
           </div>
@@ -120,13 +120,13 @@ export default function Index() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-secondary/30">
+      <section className="py-20 bg-slate-700/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-montserrat font-bold text-4xl text-foreground mb-4">
+            <h2 className="font-montserrat font-bold text-4xl text-white mb-4">
               Почему выбирают нас
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
               Профессионализм, современные технологии и индивидуальный подход
             </p>
           </div>
@@ -147,7 +147,7 @@ export default function Index() {
                 </div>
                 <div>
                   <h3 className="font-montserrat font-semibold text-xl mb-2">Опытные специалисты</h3>
-                  <p className="text-muted-foreground">Врачи с многолетним стажем работы и постоянным повышением квалификации</p>
+                  <p className="text-slate-300">Врачи с многолетним стажем работы и постоянным повышением квалификации</p>
                 </div>
               </div>
 
@@ -157,7 +157,7 @@ export default function Index() {
                 </div>
                 <div>
                   <h3 className="font-montserrat font-semibold text-xl mb-2">Современное оборудование</h3>
-                  <p className="text-muted-foreground">Передовые технологии для точной диагностики и комфортного лечения</p>
+                  <p className="text-slate-300">Передовые технологии для точной диагностики и комфортного лечения</p>
                 </div>
               </div>
 
@@ -167,7 +167,7 @@ export default function Index() {
                 </div>
                 <div>
                   <h3 className="font-montserrat font-semibold text-xl mb-2">Индивидуальный подход</h3>
-                  <p className="text-muted-foreground">Комфортная атмосфера и персональное внимание к каждому пациенту</p>
+                  <p className="text-slate-300">Комфортная атмосфера и персональное внимание к каждому пациенту</p>
                 </div>
               </div>
 
@@ -177,7 +177,7 @@ export default function Index() {
                 </div>
                 <div>
                   <h3 className="font-montserrat font-semibold text-xl mb-2">Доступные цены</h3>
-                  <p className="text-muted-foreground">Честные цены и гибкая система оплаты без скрытых платежей</p>
+                  <p className="text-slate-300">Честные цены и гибкая система оплаты без скрытых платежей</p>
                 </div>
               </div>
             </div>
@@ -186,13 +186,13 @@ export default function Index() {
       </section>
 
       {/* Reviews Section */}
-      <section id="reviews" className="py-20 bg-background">
+      <section id="reviews" className="py-20 bg-slate-800/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-montserrat font-bold text-4xl text-foreground mb-4">
+            <h2 className="font-montserrat font-bold text-4xl text-white mb-4">
               Отзывы пациентов
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
               Что говорят о нас наши пациенты
             </p>
           </div>
@@ -253,10 +253,10 @@ export default function Index() {
       </section>
 
       {/* Guarantees Section */}
-      <section className="py-20 bg-primary/5">
+      <section className="py-20 bg-slate-800/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-montserrat font-bold text-4xl text-foreground mb-4">
+            <h2 className="font-montserrat font-bold text-4xl text-white mb-4">
               Гарантии качества
             </h2>
             <img 
@@ -272,7 +272,7 @@ export default function Index() {
                 <Icon name="Settings" size={32} className="text-primary" />
               </div>
               <h3 className="font-montserrat font-semibold text-lg mb-2">Современное оборудование</h3>
-              <p className="text-muted-foreground text-sm">Европейского уровня</p>
+              <p className="text-slate-300 text-sm">Европейского уровня</p>
             </div>
 
             <div className="text-center animate-fade-in">
@@ -280,7 +280,7 @@ export default function Index() {
                 <Icon name="Shield" size={32} className="text-primary" />
               </div>
               <h3 className="font-montserrat font-semibold text-lg mb-2">Стерильные условия</h3>
-              <p className="text-muted-foreground text-sm">Безопасность процедур</p>
+              <p className="text-slate-300 text-sm">Безопасность процедур</p>
             </div>
 
             <div className="text-center animate-fade-in">
@@ -288,7 +288,7 @@ export default function Index() {
                 <Icon name="Award" size={32} className="text-primary" />
               </div>
               <h3 className="font-montserrat font-semibold text-lg mb-2">Гарантия на работы</h3>
-              <p className="text-muted-foreground text-sm">На все виды услуг</p>
+              <p className="text-slate-300 text-sm">На все виды услуг</p>
             </div>
 
             <div className="text-center animate-fade-in">
@@ -296,20 +296,20 @@ export default function Index() {
                 <Icon name="Users" size={32} className="text-primary" />
               </div>
               <h3 className="font-montserrat font-semibold text-lg mb-2">Внимательный персонал</h3>
-              <p className="text-muted-foreground text-sm">Комфортная обстановка</p>
+              <p className="text-slate-300 text-sm">Комфортная обстановка</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Contacts Section */}
-      <section id="contacts" className="py-20 bg-background">
+      <section id="contacts" className="py-20 bg-slate-800/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-montserrat font-bold text-4xl text-foreground mb-4">
+            <h2 className="font-montserrat font-bold text-4xl text-white mb-4">
               Контакты
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
               Свяжитесь с нами для записи на консультацию
             </p>
           </div>
@@ -322,7 +322,7 @@ export default function Index() {
                 </div>
                 <div>
                   <h3 className="font-montserrat font-semibold text-xl mb-2">Адрес</h3>
-                  <p className="text-muted-foreground">г. Сочи, ул. Ворошиловская, 4</p>
+                  <p className="text-slate-300">г. Сочи, ул. Ворошиловская, 4</p>
                 </div>
               </div>
 
@@ -332,7 +332,7 @@ export default function Index() {
                 </div>
                 <div>
                   <h3 className="font-montserrat font-semibold text-xl mb-2">Телефон</h3>
-                  <p className="text-muted-foreground">8 (962) 888-67-76</p>
+                  <p className="text-slate-300">8 (962) 888-67-76</p>
                 </div>
               </div>
 
@@ -342,7 +342,7 @@ export default function Index() {
                 </div>
                 <div>
                   <h3 className="font-montserrat font-semibold text-xl mb-2">Режим работы</h3>
-                  <p className="text-muted-foreground">Понедельник-пятница: 10:00 - 17:00</p>
+                  <p className="text-slate-300">Понедельник-пятница: 10:00 - 17:00</p>
                 </div>
               </div>
 
@@ -359,7 +359,7 @@ export default function Index() {
                       <Icon name="Calendar" className="mr-2" size={20} />
                       Записаться на приём
                     </Button>
-                    <p className="text-center text-sm text-muted-foreground">
+                    <p className="text-center text-sm text-slate-300">
                       Или позвоните нам по телефону для консультации
                     </p>
                   </CardContent>
@@ -372,7 +372,7 @@ export default function Index() {
                 <div className="text-center">
                   <Icon name="MapPin" size={64} className="text-primary mx-auto mb-4" />
                   <h3 className="font-montserrat font-semibold text-2xl mb-2">Карта</h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-slate-300">
                     Мы находимся в центре Сочи<br />
                     на улице Ворошиловская, 4
                   </p>
@@ -384,7 +384,7 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-foreground text-white py-12">
+      <footer className="bg-slate-900 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h3 className="font-montserrat font-bold text-3xl mb-4">Лучший Доктор</h3>
