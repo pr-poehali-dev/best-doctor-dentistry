@@ -4,18 +4,18 @@ import Icon from "@/components/ui/icon";
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 font-open-sans">
+    <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-slate-50 font-open-sans">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-slate-900/95 backdrop-blur-sm border-b border-slate-700 z-50">
+      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-blue-100 z-50 shadow-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="font-montserrat font-bold text-2xl text-primary">
             Лучший Доктор
           </div>
           <div className="hidden md:flex space-x-8">
-            <a href="#home" className="text-white hover:text-primary transition-colors">Главная</a>
-            <a href="#services" className="text-white hover:text-primary transition-colors">Услуги</a>
-            <a href="#reviews" className="text-white hover:text-primary transition-colors">Отзывы</a>
-            <a href="#contacts" className="text-white hover:text-primary transition-colors">Контакты</a>
+            <a href="#home" className="text-slate-700 hover:text-primary transition-colors">Главная</a>
+            <a href="#services" className="text-slate-700 hover:text-primary transition-colors">Услуги</a>
+            <a href="#reviews" className="text-slate-700 hover:text-primary transition-colors">Отзывы</a>
+            <a href="#contacts" className="text-slate-700 hover:text-primary transition-colors">Контакты</a>
           </div>
           <Button className="font-montserrat font-medium">
             Записаться онлайн
@@ -24,15 +24,15 @@ export default function Index() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="pt-20 pb-16 bg-gradient-to-b from-slate-900/80 to-slate-800/80">
+      <section id="home" className="pt-20 pb-16 bg-gradient-to-b from-white to-blue-50">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in">
-              <h1 className="font-montserrat font-bold text-5xl md:text-6xl text-white mb-6 leading-tight">
+            <div className="animate-fade-in bg-white border border-blue-100 hover:shadow-lg transition-shadow">
+              <h1 className="font-montserrat font-bold text-5xl md:text-6xl text-slate-800 mb-6 leading-tight">
                 Профессиональная стоматология 
                 <span className="text-primary"> в Сочи</span>
               </h1>
-              <p className="text-xl text-slate-300 mb-8 leading-relaxed">
+              <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                 Современная клиника в центре города, где забота о вашей улыбке становится приоритетом. 
                 Передовые технологии и опытные специалисты.
               </p>
@@ -59,21 +59,21 @@ export default function Index() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-slate-800/50">
+      <section id="services" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-montserrat font-bold text-4xl text-white mb-4">
+            <h2 className="font-montserrat font-bold text-4xl text-slate-800 mb-4">
               Наши услуги
             </h2>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               Полный комплекс стоматологических услуг с использованием передовых технологий
             </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="hover:shadow-lg transition-shadow animate-fade-in border-2 hover:border-primary/20">
+            <Card className="hover:shadow-xl transition-all duration-300 animate-fade-in bg-white border border-blue-100 border-2 hover:border-blue-200">
               <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon name="Wrench" size={32} className="text-primary" />
                 </div>
                 <CardTitle className="font-montserrat text-2xl">Лечение зубов</CardTitle>
@@ -86,9 +86,9 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow animate-fade-in border-2 hover:border-primary/20">
+            <Card className="hover:shadow-xl transition-all duration-300 animate-fade-in bg-white border border-blue-100 border-2 hover:border-blue-200">
               <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon name="Crown" size={32} className="text-primary" />
                 </div>
                 <CardTitle className="font-montserrat text-2xl">Протезирование</CardTitle>
@@ -101,9 +101,9 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow animate-fade-in border-2 hover:border-primary/20">
+            <Card className="hover:shadow-xl transition-all duration-300 animate-fade-in bg-white border border-blue-100 border-2 hover:border-blue-200">
               <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon name="Sparkles" size={32} className="text-primary" />
                 </div>
                 <CardTitle className="font-montserrat text-2xl">Гигиена</CardTitle>
@@ -120,19 +120,19 @@ export default function Index() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-slate-700/30">
+      <section className="py-20 bg-blue-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-montserrat font-bold text-4xl text-white mb-4">
+            <h2 className="font-montserrat font-bold text-4xl text-slate-800 mb-4">
               Почему выбирают нас
             </h2>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               Профессионализм, современные технологии и индивидуальный подход
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in">
+            <div className="animate-fade-in bg-white border border-blue-100 hover:shadow-lg transition-shadow">
               <img 
                 src="/img/43662f2a-2096-42d3-a9e0-0c7912e0613c.jpg" 
                 alt="Профессиональный стоматолог" 
@@ -141,43 +141,43 @@ export default function Index() {
             </div>
             
             <div className="space-y-8">
-              <div className="flex items-start space-x-4 animate-fade-in">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start space-x-4 animate-fade-in bg-white border border-blue-100 hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <Icon name="UserCheck" size={24} className="text-primary" />
                 </div>
                 <div>
                   <h3 className="font-montserrat font-semibold text-xl mb-2">Опытные специалисты</h3>
-                  <p className="text-slate-300">Врачи с многолетним стажем работы и постоянным повышением квалификации</p>
+                  <p className="text-slate-600">Врачи с многолетним стажем работы и постоянным повышением квалификации</p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4 animate-fade-in">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start space-x-4 animate-fade-in bg-white border border-blue-100 hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <Icon name="Zap" size={24} className="text-primary" />
                 </div>
                 <div>
                   <h3 className="font-montserrat font-semibold text-xl mb-2">Современное оборудование</h3>
-                  <p className="text-slate-300">Передовые технологии для точной диагностики и комфортного лечения</p>
+                  <p className="text-slate-600">Передовые технологии для точной диагностики и комфортного лечения</p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4 animate-fade-in">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start space-x-4 animate-fade-in bg-white border border-blue-100 hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <Icon name="Heart" size={24} className="text-primary" />
                 </div>
                 <div>
                   <h3 className="font-montserrat font-semibold text-xl mb-2">Индивидуальный подход</h3>
-                  <p className="text-slate-300">Комфортная атмосфера и персональное внимание к каждому пациенту</p>
+                  <p className="text-slate-600">Комфортная атмосфера и персональное внимание к каждому пациенту</p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4 animate-fade-in">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start space-x-4 animate-fade-in bg-white border border-blue-100 hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <Icon name="DollarSign" size={24} className="text-primary" />
                 </div>
                 <div>
                   <h3 className="font-montserrat font-semibold text-xl mb-2">Доступные цены</h3>
-                  <p className="text-slate-300">Честные цены и гибкая система оплаты без скрытых платежей</p>
+                  <p className="text-slate-600">Честные цены и гибкая система оплаты без скрытых платежей</p>
                 </div>
               </div>
             </div>
@@ -186,19 +186,19 @@ export default function Index() {
       </section>
 
       {/* Reviews Section */}
-      <section id="reviews" className="py-20 bg-slate-800/50">
+      <section id="reviews" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-montserrat font-bold text-4xl text-white mb-4">
+            <h2 className="font-montserrat font-bold text-4xl text-slate-800 mb-4">
               Отзывы пациентов
             </h2>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               Что говорят о нас наши пациенты
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="animate-fade-in">
+            <Card className="animate-fade-in bg-white border border-blue-100 hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="flex items-center space-x-2 mb-2">
                   {[...Array(5)].map((_, i) => (
@@ -215,7 +215,7 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="animate-fade-in">
+            <Card className="animate-fade-in bg-white border border-blue-100 hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="flex items-center space-x-2 mb-2">
                   {[...Array(5)].map((_, i) => (
@@ -232,7 +232,7 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="animate-fade-in">
+            <Card className="animate-fade-in bg-white border border-blue-100 hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="flex items-center space-x-2 mb-2">
                   {[...Array(5)].map((_, i) => (
@@ -253,10 +253,10 @@ export default function Index() {
       </section>
 
       {/* Guarantees Section */}
-      <section className="py-20 bg-slate-800/30">
+      <section className="py-20 bg-gradient-to-r from-blue-50 to-slate-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-montserrat font-bold text-4xl text-white mb-4">
+            <h2 className="font-montserrat font-bold text-4xl text-slate-800 mb-4">
               Гарантии качества
             </h2>
             <img 
@@ -267,87 +267,87 @@ export default function Index() {
           </div>
 
           <div className="grid md:grid-cols-4 gap-8">
-            <div className="text-center animate-fade-in">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center animate-fade-in bg-white border border-blue-100 hover:shadow-lg transition-shadow">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Icon name="Settings" size={32} className="text-primary" />
               </div>
               <h3 className="font-montserrat font-semibold text-lg mb-2">Современное оборудование</h3>
-              <p className="text-slate-300 text-sm">Европейского уровня</p>
+              <p className="text-slate-600 text-sm">Европейского уровня</p>
             </div>
 
-            <div className="text-center animate-fade-in">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center animate-fade-in bg-white border border-blue-100 hover:shadow-lg transition-shadow">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Icon name="Shield" size={32} className="text-primary" />
               </div>
               <h3 className="font-montserrat font-semibold text-lg mb-2">Стерильные условия</h3>
-              <p className="text-slate-300 text-sm">Безопасность процедур</p>
+              <p className="text-slate-600 text-sm">Безопасность процедур</p>
             </div>
 
-            <div className="text-center animate-fade-in">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center animate-fade-in bg-white border border-blue-100 hover:shadow-lg transition-shadow">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Icon name="Award" size={32} className="text-primary" />
               </div>
               <h3 className="font-montserrat font-semibold text-lg mb-2">Гарантия на работы</h3>
-              <p className="text-slate-300 text-sm">На все виды услуг</p>
+              <p className="text-slate-600 text-sm">На все виды услуг</p>
             </div>
 
-            <div className="text-center animate-fade-in">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center animate-fade-in bg-white border border-blue-100 hover:shadow-lg transition-shadow">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Icon name="Users" size={32} className="text-primary" />
               </div>
               <h3 className="font-montserrat font-semibold text-lg mb-2">Внимательный персонал</h3>
-              <p className="text-slate-300 text-sm">Комфортная обстановка</p>
+              <p className="text-slate-600 text-sm">Комфортная обстановка</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Contacts Section */}
-      <section id="contacts" className="py-20 bg-slate-800/50">
+      <section id="contacts" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-montserrat font-bold text-4xl text-white mb-4">
+            <h2 className="font-montserrat font-bold text-4xl text-slate-800 mb-4">
               Контакты
             </h2>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               Свяжитесь с нами для записи на консультацию
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="space-y-8">
-              <div className="flex items-start space-x-4 animate-fade-in">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start space-x-4 animate-fade-in bg-white border border-blue-100 hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <Icon name="MapPin" size={24} className="text-primary" />
                 </div>
                 <div>
                   <h3 className="font-montserrat font-semibold text-xl mb-2">Адрес</h3>
-                  <p className="text-slate-300">г. Сочи, ул. Ворошиловская, 4</p>
+                  <p className="text-slate-600">г. Сочи, ул. Ворошиловская, 4</p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4 animate-fade-in">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start space-x-4 animate-fade-in bg-white border border-blue-100 hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <Icon name="Phone" size={24} className="text-primary" />
                 </div>
                 <div>
                   <h3 className="font-montserrat font-semibold text-xl mb-2">Телефон</h3>
-                  <p className="text-slate-300">8 (962) 888-67-76</p>
+                  <p className="text-slate-600">8 (962) 888-67-76</p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4 animate-fade-in">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start space-x-4 animate-fade-in bg-white border border-blue-100 hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <Icon name="Clock" size={24} className="text-primary" />
                 </div>
                 <div>
                   <h3 className="font-montserrat font-semibold text-xl mb-2">Режим работы</h3>
-                  <p className="text-slate-300">Понедельник-пятница: 10:00 - 17:00</p>
+                  <p className="text-slate-600">Понедельник-пятница: 10:00 - 17:00</p>
                 </div>
               </div>
 
               <div className="pt-8">
-                <Card className="border-2 border-primary/20">
+                <Card className="border-2 border-blue-200 bg-white shadow-lg">
                   <CardHeader>
                     <CardTitle className="font-montserrat text-2xl text-center">Онлайн запись</CardTitle>
                     <CardDescription className="text-center">
@@ -359,7 +359,7 @@ export default function Index() {
                       <Icon name="Calendar" className="mr-2" size={20} />
                       Записаться на приём
                     </Button>
-                    <p className="text-center text-sm text-slate-300">
+                    <p className="text-center text-sm text-slate-600">
                       Или позвоните нам по телефону для консультации
                     </p>
                   </CardContent>
@@ -367,12 +367,12 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="animate-fade-in">
-              <div className="bg-secondary/20 rounded-2xl p-8 h-96 flex items-center justify-center">
+            <div className="animate-fade-in bg-white border border-blue-100 hover:shadow-lg transition-shadow">
+              <div className="bg-blue-50 border border-blue-100 rounded-2xl p-8 h-96 flex items-center justify-center shadow-inner">
                 <div className="text-center">
                   <Icon name="MapPin" size={64} className="text-primary mx-auto mb-4" />
                   <h3 className="font-montserrat font-semibold text-2xl mb-2">Карта</h3>
-                  <p className="text-slate-300">
+                  <p className="text-slate-600">
                     Мы находимся в центре Сочи<br />
                     на улице Ворошиловская, 4
                   </p>
@@ -384,7 +384,7 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12">
+      <footer className="bg-slate-800 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h3 className="font-montserrat font-bold text-3xl mb-4">Лучший Доктор</h3>
