@@ -4,7 +4,7 @@ import Icon from "@/components/ui/icon";
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-background font-open-sans">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-white font-open-sans">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
