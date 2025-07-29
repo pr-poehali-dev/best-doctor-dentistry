@@ -73,7 +73,7 @@ export default function Index() {
                   <span className="hidden sm:inline">Записаться на консультацию</span>
                   <span className="sm:hidden">Записаться</span>
                 </Button>
-                <Button variant="outline" size="lg" className="font-montserrat font-medium text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4">
+                <Button variant="secondary" size="lg" className="font-montserrat font-medium text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4">
                   <Icon name="Phone" className="mr-2" size={20} />
                   8 (962) 888-67-76
                 </Button>
